@@ -12,13 +12,14 @@
     <button aria-hidden="true" class="hidden-btn">Esconde tudo</button>
     <main>
       <div class="wrap">
-        <p id="inicio" tabindex="-1">
+        <a id="start" class="hidden-screen" tabindex="1" href="#inicio">Começar</a>
+        <p id="inicio">
           Bem vindos ao primeiro <span lang="en">meetup</span> de html.
         </p>
         <p>
           Antes de comerçarmos nosso bate papo, quero me apresentar e seguir com
-          nosso exercício de navegação como um deficênte visual. Lembrando que o
-          intuíto é vocês sentirem como é essa realidade.
+          nosso exercício de navegação, como se fôssemos um deficiênte visual. O
+          intuíto é fazer vocês sentirem como é essa realidade.
           <a href="#sobre">Vamos começar</a>
         </p>
         <section class="box" aria-describedby="sobre">
@@ -28,14 +29,13 @@
           <h1 class="box-title">Me chamo Luciano Baraúna.</h1>
           <p>
               Hoje vamos conversar um pouco sobre acessibilidade e
-              vou tentar mostrar para vocês algumas coisas que ajudam na hora 
-              de desenvolver algo acessível.
+              tentarei mostrar para vocês algumas coisas que ajudam a montar um
+              html acessível.
           </p>
           <p>
-              Dessa maneira para vocês terem a noção de como
-              é a vida de um deficiente visual. Costumo dizer que ao desenvolver
-              para uma pessoa com deficiência você precisa realmente entender 
-              o mundo deles. <strong>Resumindo: "virar a chave da casinha".</strong>
+              Seguindo nosso exercício com o código acessível. 
+              Costumo dizer que ao desenvolver para uma pessoa com deficiência você precisa realmente entender 
+              as limitações e se imaginar no lugar deles ao navegar a sua página. <strong>Resumindo: "Você precisa virar a chave da casinha".</strong>
           </p>
         </section>
         <h2 aria-hidden="true">
@@ -79,7 +79,7 @@
               Esse texto não vai aparecer por conta do css.
               PS: Fica para um próximo meetup de css para falarmos sobre os conteúdos que aparecem ou não em leitores de tela.
             </p>
-            <a class="hidden-screen" tabindex="1" href="#inicio">Voltar para o início</a>
+            <a class="hidden-screen" tabindex="1" href="#start">Voltar para o início</a>
         </section>
       </div>
     </main>
