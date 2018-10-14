@@ -19,6 +19,10 @@ p { margin-bottom: 1.2rem; }
   font-size: 0;
 }
 
+.hidden-btn {
+  margin-left: 1.2rem;
+}
+
 /* Esconde conteúdo da tela e do leitor de tela */
 .dnone {
   display: none;
@@ -74,9 +78,9 @@ body {
   font-style: italic;
 }
 
-
-.goback {
+.link-referencia {
   display: block;
   margin-top: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
 }
