@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <button aria-hidden="true" class="hidden-btn">Esconde tudo</button>
     <main>
       <div class="wrap">
         <p id="inicio" tabindex="0">
@@ -65,7 +66,7 @@
             <span class="hidden-screen">exemplo de uma imagem descritiva.</span>
             <figure class="box-img">
                 <img src="./640px-Elevador822.jpg" alt="roletas de entrada com 
-                corrimão a direita, elevador acessível a esquerda e degraus feitos de mámore.">
+                corrimão a direita, elevador acessível a esquerda e degraus feitos de mármore.">
                 <figcaption>
                   Entrada do campus I do Cefet-MG. Essa imagem representa 
                   um pouco a preocupação que uma organização, empresa, local e etc...
@@ -81,7 +82,14 @@
         </section>
       </div>
     </main>
-    
+    <script>
+      let $btn = document.querySelector('.hidden-btn');
+      let $wrap = document.querySelector('.wrap');
+      $btn.addEventListener('click', (e)=> {
+        e.preventDefault()
+        $wrap.classList.toggle('wrap-hidden')
+      })
+    </script>
     
 </body>
 </html>
