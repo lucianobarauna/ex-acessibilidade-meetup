@@ -84,3 +84,20 @@ body {
   font-size: 1.4rem;
   text-align: center;
 }
+
+/* Adicionando marcador de link externo
+   Baseado em: https://codepen.io/simevidas/pen/MKdmeV */
+.link-referencia:after {
+  content: '(link externo)';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  text-indent: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/44/Icon_External_Link.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-left: .2em;
+}
